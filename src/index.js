@@ -8,7 +8,7 @@ module.exports = function makeExchange(currency) {
     return {};
   }
 
-    var countH = 0, //50¢
+    let countH = 0, //50¢
         countQ = 0, //25¢
         countD = 0, //10¢
         countN = 0, //5¢
@@ -39,7 +39,7 @@ module.exports = function makeExchange(currency) {
     countP++;
   }
 
-  var exchange = new Object();
+  let exchange = new Object();
   if (countH) exchange.H = countH;
   if (countQ) exchange.Q = countQ;
   if (countD) exchange.D = countD;
